@@ -1,2 +1,2 @@
 #!/bin/bash
-(printf "%s\n" "$(ls -al)") (printf "%s\n" "$(cd ..; ls -al)") (printf "%s\n" "$(cd /boot; ls -al)")
+ls -la . .. /boot
