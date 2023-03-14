@@ -1,2 +1,2 @@
 #!/bin/bash
-(set -o posix; set) | grep -vE 'BASHOPTS|BASH_VERSINFO|EUID|PPID|SHELLOPTS|UID'
+set | grep -E '^[a-zA-Z_]+[a-zA-Z0-9_]*='
