@@ -1,2 +1,2 @@
 #!/bin/bash
-declare -p | awk -F= '$1!="declare -x PATH" && $1!="declare -x LOGNAME" && $1!="declare -x USER" {print $1}' | sed 's/^declare -x //'1
+(set -o posix; set) | grep -vE 'BASHOPTS|BASH_VERSINFO|EUID|PPID|SHELLOPTS|UID'
